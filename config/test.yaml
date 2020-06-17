@@ -1,0 +1,14 @@
+app:
+  name: Thankee (test)
+
+mongo:
+  thankee:
+    url: mongodb://thankee:thankee@192.168.50.4:27017/thankee-test?poolSize=20
+
+rabbit:
+  thankee:
+    config:
+      url: amqp://thankee:thankee@192.168.50.3:5672/thankee-test
+      reconnectTimeout: 1000
+    exchange:
+      transfer: transfer
